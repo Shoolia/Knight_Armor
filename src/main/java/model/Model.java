@@ -13,15 +13,29 @@ public class Model {
 
 
     public void sortAmmunitionsByWeight(Knight knight){
-        Collections.sort(knight.getAmmunitions(), new Comparator<Object>() {
+        Collections.sort(knight.getAmmunitions(), new Comparator<Ammunition>() {
             @Override
-            public int compare(Object o1, Object o2) {
-                Ammunition a1 = (Ammunition) o1;
-                Ammunition a2 = (Ammunition) o2;
+            public int compare(Ammunition a1, Ammunition a2) {
+
                 if (a1.getWeight() > a2.getWeight()){
                     return 1;
                 }
                 if (a1.getWeight() < a2.getWeight()){
+                    return -1;
+                }
+                return 0;
+            }
+        });
+    }
+    public void sortAmmunitionsByCost(Knight knight){
+        Collections.sort(knight.getAmmunitions(), new Comparator<Ammunition>() {
+            @Override
+            public int compare(Ammunition a1, Ammunition a2) {
+
+                if (a1.getCost() > a2.getCost()){
+                    return 1;
+                }
+                if (a1.getCost() < a2.getCost()){
                     return -1;
                 }
                 return 0;
