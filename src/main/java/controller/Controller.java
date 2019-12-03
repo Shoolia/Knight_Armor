@@ -25,7 +25,8 @@ public class Controller {
         System.out.println(knight1);
         System.out.println(knight2);
         System.out.println(knight3);
-
+        model.sortAmmunitionsByWeight(knight1);
+        System.out.println(knight1.getAmmunitions());
 
     }
 }

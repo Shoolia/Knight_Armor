@@ -3,9 +3,31 @@ package model;
 import controller.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 
 public class Model {
+
+
+
+
+    public void sortAmmunitionsByWeight(Knight knight){
+        Collections.sort(knight.getAmmunitions(), new Comparator<Object>() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                Ammunition a1 = (Ammunition) o1;
+                Ammunition a2 = (Ammunition) o2;
+                if (a1.getWeight() > a2.getWeight()){
+                    return 1;
+                }
+                if (a1.getWeight() < a2.getWeight()){
+                    return -1;
+                }
+                return 0;
+            }
+        });
+    }
 
     public void buyForFirst(ArrayList<Ammunition> inventory, String... ammunition) {
         Ammunition temp;
