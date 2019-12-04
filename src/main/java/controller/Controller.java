@@ -16,19 +16,16 @@ public class Controller {
 
     public void processUser(){
         view.printMessage(View.HELLO);
-        Knight knight1 = new Knight(20,100,Knight.knights.LOWER_KNIGHT.name(), new ArrayList<Ammunition>());
-        Knight knight2 = new Knight(25,100,Knight.knights.MIDDLE_KNIGHT.name(),new ArrayList<Ammunition>());
-        Knight knight3 = new Knight(27,100,Knight.knights.HIGHEST_KNIGHT.name(),new ArrayList<Ammunition>());
-        model.buyForFirst(knight1.getAmmunitions(), "Armor","Helmet","Shield", "Sword");
-        model.buyForSecond(knight2.getAmmunitions(), "Armor","Helmet","Shield", "Sword");
-        model.buyForThird(knight3.getAmmunitions(), "Armor","Helmet","Shield", "Sword");
-        System.out.println(knight1);
-        System.out.println(knight2);
-        System.out.println(knight3);
-        model.sortAmmunitionsByWeight(knight1);
-        System.out.println(knight1.getAmmunitions());
-        model.sortAmmunitionsByCost(knight1);
-        System.out.println(knight1.getAmmunitions());
-
+        Knight knight = new Knight(20,100, Knights.LOWER_KNIGHT.name(), new ArrayList<Ammunition>());
+        model.buy(knight.getAmmunition(), "Armor","Helmet","Shield", "Sword");
+        System.out.println(knight);
+        model.sortAmmunitionByWeight(knight);
+        System.out.println("\n" + "-----------FILTERED BY WEIGHT -----------");
+        System.out.println(knight.getAmmunition());
+        model.sortAmmunitionByCost(knight);
+        System.out.println("\n" + "-----------FILTERED BY COST -----------");
+        System.out.println(knight.getAmmunition());
+        System.out.println("\n" + "-----------Ammunition in range-----------");
+        System.out.println(model.findInCostRange(knight, 19,26));
     }
 }

@@ -1,5 +1,6 @@
 package controller;
 
+
 public class Sword extends Ammunition {
 
     private final boolean twoHanded;

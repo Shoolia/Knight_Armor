@@ -1,9 +1,6 @@
-import controller.Ammunition;
 import controller.Controller;
 import model.Model;
 import view.View;
-
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {

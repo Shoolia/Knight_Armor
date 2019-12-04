@@ -1,5 +1,7 @@
 package controller;
 
+
+
 public class Shield extends Ammunition {
 
     private int healthPointOfShield;

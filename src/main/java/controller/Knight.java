@@ -1,24 +1,21 @@
 package controller;
 
+
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Knight {
-    public enum knights{
-        LOWER_KNIGHT,
-        MIDDLE_KNIGHT,
-        HIGHEST_KNIGHT;
-    }
-
     private int years;
     private int healthPoint;
     private String  typeOfKnight;
-    private ArrayList<Ammunition> ammunitions;
+    private List<Ammunition> ammunition;
 
-    public Knight(int years, int healthPoint, String typeOfKnight, ArrayList<Ammunition> ammunitions) {
+    public Knight(int years, int healthPoint, String typeOfKnight, ArrayList<Ammunition> ammunition) {
         this.years = years;
         this.healthPoint = healthPoint;
         this.typeOfKnight = typeOfKnight;
-        this.ammunitions = ammunitions;
+        this.ammunition = ammunition;
     }
 
     public int getYears() {
@@ -45,23 +42,24 @@ public class Knight {
         this.typeOfKnight = name;
     }
 
-    public ArrayList<Ammunition> getAmmunitions() {
-        return ammunitions;
+    public List<Ammunition> getAmmunition() {
+        return ammunition;
     }
 
-    public void setAmmunitions(ArrayList<Ammunition> ammunitions) {
-        this.ammunitions = ammunitions;
+    public void setAmmunition(ArrayList<Ammunition> ammunition) {
+        this.ammunition = ammunition;
     }
+
     @Override
     public String toString() {
         StringBuilder knightDescription = new StringBuilder("\n" + "Type of knight: " + typeOfKnight
                 + ". Hit points: " + healthPoint + ". Years " + years +  ".");
-        if (!ammunitions.isEmpty()) {
+        if (!ammunition.isEmpty()) {
             knightDescription.append("\n" + "------------------------------");
-            for (Ammunition ammunition : ammunitions) {
-                knightDescription.append(new StringBuilder(ammunition.toString()));
+            for (Ammunition ammunition : ammunition) {
+                knightDescription.append(ammunition.toString());
             }
         }
-        return new String(knightDescription);
+        return knightDescription.toString();
     }
 }
