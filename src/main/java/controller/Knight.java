@@ -57,7 +57,7 @@ public class Knight {
         StringBuilder knightDescription = new StringBuilder("\n" + "Type of knight: " + typeOfKnight
                 + ". Hit points: " + healthPoint + ". Years " + years +  ".");
         if (!ammunitions.isEmpty()) {
-            knightDescription.append("\n" + "----------AMMUNITIONS----------" + "\n");
+            knightDescription.append("\n" + "------------------------------");
             for (Ammunition ammunition : ammunitions) {
                 knightDescription.append(new StringBuilder(ammunition.toString()));
             }
