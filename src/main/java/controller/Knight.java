@@ -11,7 +11,7 @@ public class Knight {
     private String  typeOfKnight;
     private List<Ammunition> ammunition;
 
-    public Knight(int years, int healthPoint, String typeOfKnight, ArrayList<Ammunition> ammunition) {
+    public Knight(int years, int healthPoint, String typeOfKnight, List<Ammunition> ammunition) {
         this.years = years;
         this.healthPoint = healthPoint;
         this.typeOfKnight = typeOfKnight;
@@ -46,7 +46,7 @@ public class Knight {
         return ammunition;
     }
 
-    public void setAmmunition(ArrayList<Ammunition> ammunition) {
+    public void setAmmunition(List<Ammunition> ammunition) {
         this.ammunition = ammunition;
     }
 
