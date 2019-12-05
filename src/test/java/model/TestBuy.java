@@ -19,13 +19,15 @@ public class TestBuy {
     Model model = new Model();
     Knight knight = new Knight(20,100, Knights.LOWER_KNIGHT.name(),new ArrayList<Ammunition>());
 
+
     @Test
-    public void testBuyMissingItem() {
-        String ammum = "Knife";
+    public void testBuyNotNull() {
+        String [] ammum = {"Knife", "Armor","Helmet", "Ball"};
+        ArrayList<Ammunition>  amm = new ArrayList<>();
         model.buy(knight.getAmmunition(), ammum);
         Assert.assertNotNull(ammum);
-    }
 
+    }
 
 
 
