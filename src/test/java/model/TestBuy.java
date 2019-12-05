@@ -22,13 +22,10 @@ public class TestBuy {
 
     @Test
     public void testBuyNotNull() {
-        String [] ammum = {"Knife", "Armor","Helmet", "Ball"};
-        ArrayList<Ammunition>  amm = new ArrayList<>();
+        String [] ammum = {"Armor","Helmet"};
         model.buy(knight.getAmmunition(), ammum);
         Assert.assertNotNull(ammum);
 
     }
-
-
-
     }
+
