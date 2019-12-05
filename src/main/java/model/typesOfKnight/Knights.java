@@ -1,4 +1,4 @@
-package controller;
+package model.typesOfKnight;
 
 public enum Knights{
         LOWER_KNIGHT,

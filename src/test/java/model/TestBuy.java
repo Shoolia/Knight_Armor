@@ -1,18 +1,12 @@
 package model;
 
-import controller.Ammunition;
-import controller.Controller;
-import controller.Knight;
-import controller.Knights;
+import model.typesOfAmmunition.Ammunition;
+import model.typesOfKnight.Knight;
+import model.typesOfKnight.Knights;
 import org.junit.Assert;
 import org.junit.Test;
-import view.View;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class TestBuy {
 

@@ -1,8 +1,9 @@
-package controller;
+package model.typesOfKnight;
 
 
 
-import java.util.ArrayList;
+import model.typesOfAmmunition.Ammunition;
+
 import java.util.List;
 
 public class Knight {

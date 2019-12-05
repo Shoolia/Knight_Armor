@@ -1,5 +1,4 @@
-package controller;
-
+package model.typesOfAmmunition;
 
 
 public class Shield extends Ammunition {

@@ -1,4 +1,4 @@
-package controller;
+package model.typesOfAmmunition;
 
 public class Ammunition {
 

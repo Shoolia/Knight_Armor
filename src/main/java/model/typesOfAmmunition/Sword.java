@@ -1,4 +1,4 @@
-package controller;
+package model.typesOfAmmunition;
 
 
 public class Sword extends Ammunition {
@@ -28,7 +28,7 @@ public class Sword extends Ammunition {
     @Override
     public String toString() {
         String oneOrTwoHandSword = "";
-        if (twoHanded == true){
+        if (twoHanded){
             oneOrTwoHandSword = "two-hands";
         } else {
             oneOrTwoHandSword = "one hand";

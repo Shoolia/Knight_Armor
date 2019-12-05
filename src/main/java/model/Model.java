@@ -1,7 +1,7 @@
 package model;
 
-import controller.*;
-import sun.awt.image.AbstractMultiResolutionImage;
+import model.typesOfAmmunition.*;
+import model.typesOfKnight.Knight;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,6 +41,7 @@ public class Model {
      *
      */
     public void sortAmmunitionByWeight(Knight knight) {
+        List<Ammunition> result;
         Collections.sort(knight.getAmmunition(), new Comparator<Ammunition>() {
             @Override
             public int compare(Ammunition a1, Ammunition a2) {
