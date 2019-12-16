@@ -1,9 +1,9 @@
 package controller;
 
 import model.Model;
-import model.typesOfAmmunition.Ammunition;
-import model.typesOfKnight.Knight;
-import model.typesOfKnight.Knights;
+import model.Entity.Ammunition;
+import model.Entity.Knight;
+import model.Entity.Knights;
 import view.View;
 
 import java.util.ArrayList;

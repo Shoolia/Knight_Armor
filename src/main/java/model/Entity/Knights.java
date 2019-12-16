@@ -1,4 +1,4 @@
-package model.typesOfKnight;
+package model.Entity;
 
 public enum Knights{
         LOWER_KNIGHT,

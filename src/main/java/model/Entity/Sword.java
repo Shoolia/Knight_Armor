@@ -1,5 +1,7 @@
-package model.typesOfAmmunition;
+package model.Entity;
 
+
+import model.Entity.Ammunition;
 
 public class Sword extends Ammunition {
 

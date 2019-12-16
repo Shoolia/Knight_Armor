@@ -1,4 +1,4 @@
-package model.typesOfAmmunition;
+package model.Entity;
 
 public class Ammunition {
 

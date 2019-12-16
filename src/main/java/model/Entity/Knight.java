@@ -1,8 +1,8 @@
-package model.typesOfKnight;
+package model.Entity;
 
 
 
-import model.typesOfAmmunition.Ammunition;
+import model.Entity.Ammunition;
 
 import java.util.List;
 

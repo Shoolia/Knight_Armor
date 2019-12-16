@@ -1,8 +1,8 @@
 package model;
 
-import model.typesOfAmmunition.Ammunition;
-import model.typesOfKnight.Knight;
-import model.typesOfKnight.Knights;
+import model.Entity.Ammunition;
+import model.Entity.Knight;
+import model.Entity.Knights;
 import org.junit.Assert;
 import org.junit.Test;
 
